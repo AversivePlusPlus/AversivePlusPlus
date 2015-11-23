@@ -10,3 +10,6 @@
 [submodule "hdl/atmegaxx0_1"]
 	path = hdl/atmegaxx0_1
 	url = https://github.com/AversivePlusPlus/hdl-atmegaxx0_1.git
+[submodule "hal"]
+	path = hal
+	url = https://github.com/AversivePlusPlus/hal.git

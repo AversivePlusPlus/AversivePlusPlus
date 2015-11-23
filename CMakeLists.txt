@@ -7,6 +7,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++11")
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/base")
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/memory_mapping")
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/hdl/atmegaxx0_1")
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/hal")
 
 add_library(
   Aversive++ STATIC
