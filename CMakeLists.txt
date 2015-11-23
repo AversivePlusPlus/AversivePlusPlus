@@ -2,8 +2,23 @@ cmake_minimum_required(VERSION 2.6)
 
 project(Aversive++ CXX C ASM)
 
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/base")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++11")
 
-add_library(Aversive++ STATIC $<TARGET_OBJECTS:base_obj>)
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/base")
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/memory_mapping")
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/hdl/atmegaxx0_1")
+
+add_library(
+  Aversive++ STATIC
+  $<TARGET_OBJECTS:base_obj>
+  $<TARGET_OBJECTS:memory_mapping_obj>
+  $<TARGET_OBJECTS:hdl-atmegaxx0_1_obj>
+  )
+
+add_library(
+  Aversive++_startup STATIC
+  $<TARGET_OBJECTS:hdl-atmegaxx0_1_startup_obj>
+  )
 
 set_target_properties(Aversive++ PROPERTIES LINKER_LANGUAGE CXX)
+set_target_properties(Aversive++_startup PROPERTIES LINKER_LANGUAGE CXX)
