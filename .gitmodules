@@ -13,3 +13,9 @@
 [submodule "hal"]
 	path = hal
 	url = https://github.com/AversivePlusPlus/hal.git
+[submodule "cmake/toolchain/stm32"]
+	path = cmake/toolchain/stm32
+	url = https://github.com/AversivePlusPlus/toolchain-stm32.git
+[submodule "hal-stm32cubef4"]
+	path = hal-stm32cubef4
+	url = https://github.com/AversivePlusPlus/hal-stm32cubef4.git
