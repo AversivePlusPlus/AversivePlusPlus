@@ -19,11 +19,10 @@ add_library(
   )
 
 add_library(
-  Aversive++_startup STATIC
+  startup STATIC
   $<TARGET_OBJECTS:hdl-atmegaxx0_1_startup_obj>
   $<TARGET_OBJECTS:hal-stm32cubef4_startup_obj>
   )
 
 set_target_properties(Aversive++ PROPERTIES LINKER_LANGUAGE CXX)
-set_target_properties(Aversive++_startup PROPERTIES LINKER_LANGUAGE CXX)
-set(startup -Wl,-whole-archive Aversive++_startup -Wl,-no-whole-archive)
+set_target_properties(startup PROPERTIES LINKER_LANGUAGE CXX)
