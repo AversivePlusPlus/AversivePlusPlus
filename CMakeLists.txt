@@ -16,12 +16,16 @@ add_library(
   $<TARGET_OBJECTS:memory_mapping_obj>
   $<TARGET_OBJECTS:hdl-atmegaxx0_1_obj>
   $<TARGET_OBJECTS:hal-stm32cubef4_obj>
+  $<TARGET_OBJECTS:stm32cube-hal-stm32f4xx_obj>
+  $<TARGET_OBJECTS:cmsis-stm32f4xx_obj>
   )
 
 add_library(
   startup STATIC
   $<TARGET_OBJECTS:hdl-atmegaxx0_1_startup_obj>
   $<TARGET_OBJECTS:hal-stm32cubef4_startup_obj>
+  $<TARGET_OBJECTS:cmsis-stm32f4xx_startup_obj>
+  $<TARGET_OBJECTS:stm32cube-hal-stm32f4xx_startup_obj>
   )
 
 set_target_properties(Aversive++ PROPERTIES LINKER_LANGUAGE CXX)
