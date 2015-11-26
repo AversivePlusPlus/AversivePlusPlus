@@ -16,3 +16,6 @@
 [submodule "hal-stm32cubef4"]
 	path = hal-stm32cubef4
 	url = https://github.com/AversivePlusPlus/hal-stm32cubef4.git
+[submodule "hdl-atmegaxx0_1"]
+	path = hdl-atmegaxx0_1
+	url = https://github.com/AversivePlusPlus/hdl-atmegaxx0_1.git
