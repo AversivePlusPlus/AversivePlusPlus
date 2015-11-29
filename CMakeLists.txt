@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 2.6)
 project(Aversive++ CXX C ASM)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++11")
+set(CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}/AversivePlusPlus")
 
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/base")
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/memory_mapping")
@@ -30,3 +31,13 @@ add_library(
 
 set_target_properties(Aversive++ PROPERTIES LINKER_LANGUAGE CXX)
 set_target_properties(startup PROPERTIES LINKER_LANGUAGE CXX)
+
+install(TARGETS
+  Aversive++ startup
+  ARCHIVE DESTINATION lib/${AVERSIVE_MCU}
+  )
+
+install(DIRECTORY
+  cmake/toolchain
+  DESTINATION .
+  )
