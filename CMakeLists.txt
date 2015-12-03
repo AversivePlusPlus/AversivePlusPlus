@@ -5,35 +5,50 @@ project(Aversive++ CXX C ASM)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++11")
 set(CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}/AversivePlusPlus")
 
-add_subdirectory("base")
-add_subdirectory("memory_mapping")
-add_subdirectory("container")
-add_subdirectory("hal")
+set(subdirs
+  base
+  memory_mapping
+  container
+  hal
+  hdl-atmegaxx0_1
+  hal-stm32cubef4
+  stream
+  stream-hal
+  )
 
-add_subdirectory("hdl-atmegaxx0_1")
-add_subdirectory("hal-stm32cubef4")
+foreach(d ${subdirs})
+  add_subdirectory(${d})
+endforeach()
 
-add_subdirectory("stream")
-add_subdirectory("stream-hal")
+set(submodules ${subdirs})
+foreach(m ${submodules})
+  get_target_property(m_sub ${m} INTERFACE_LINK_LIBRARIES)
+  if(m_sub)
+    set(submodules ${submodules} ${m_sub})
+  endif()
+endforeach()
+list(REMOVE_DUPLICATES submodules)
 
+set(objs)
+foreach(m ${submodules})
+  set(objs ${objs} $<TARGET_OBJECTS:${m}_obj>)
+endforeach()
+
+set(startup_objs)
+foreach(m ${submodules})
+  if(TARGET ${m}_startup_obj)
+    set(startup_objs ${startup_objs} $<TARGET_OBJECTS:${m}_startup_obj>)
+  endif()
+endforeach()
 
 add_library(
   Aversive++ STATIC
-  $<TARGET_OBJECTS:base_obj>
-  $<TARGET_OBJECTS:memory_mapping_obj>
-  $<TARGET_OBJECTS:hdl-atmegaxx0_1_obj>
-  $<TARGET_OBJECTS:hal-stm32cubef4_obj>
-  $<TARGET_OBJECTS:stm32cube-hal-stm32f4xx_obj>
-  $<TARGET_OBJECTS:cmsis-stm32f4xx_obj>
-  $<TARGET_OBJECTS:stream_obj>
+  ${objs}
   )
 
 add_library(
   startup STATIC
-  $<TARGET_OBJECTS:hdl-atmegaxx0_1_startup_obj>
-  $<TARGET_OBJECTS:hal-stm32cubef4_startup_obj>
-  $<TARGET_OBJECTS:cmsis-stm32f4xx_startup_obj>
-  $<TARGET_OBJECTS:stm32cube-hal-stm32f4xx_startup_obj>
+  ${startup_objs}
   )
 
 set_target_properties(Aversive++ PROPERTIES LINKER_LANGUAGE CXX)
