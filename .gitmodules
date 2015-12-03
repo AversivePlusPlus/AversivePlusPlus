@@ -19,3 +19,12 @@
 [submodule "hdl-atmegaxx0_1"]
 	path = hdl-atmegaxx0_1
 	url = https://github.com/AversivePlusPlus/hdl-atmegaxx0_1.git
+[submodule "container"]
+	path = container
+	url = https://github.com/AversivePlusPlus/container.git
+[submodule "stream"]
+	path = stream
+	url = https://github.com/AversivePlusPlus/stream.git
+[submodule "stream-hal"]
+	path = stream-hal
+	url = https://github.com/AversivePlusPlus/stream-hal.git

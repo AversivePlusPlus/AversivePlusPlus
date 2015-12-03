@@ -5,11 +5,17 @@ project(Aversive++ CXX C ASM)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++11")
 set(CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}/AversivePlusPlus")
 
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/base")
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/memory_mapping")
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/hdl-atmegaxx0_1")
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/hal")
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/hal-stm32cubef4")
+add_subdirectory("base")
+add_subdirectory("memory_mapping")
+add_subdirectory("container")
+add_subdirectory("hal")
+
+add_subdirectory("hdl-atmegaxx0_1")
+add_subdirectory("hal-stm32cubef4")
+
+add_subdirectory("stream")
+add_subdirectory("stream-hal")
+
 
 add_library(
   Aversive++ STATIC
@@ -19,6 +25,7 @@ add_library(
   $<TARGET_OBJECTS:hal-stm32cubef4_obj>
   $<TARGET_OBJECTS:stm32cube-hal-stm32f4xx_obj>
   $<TARGET_OBJECTS:cmsis-stm32f4xx_obj>
+  $<TARGET_OBJECTS:stream_obj>
   )
 
 add_library(
