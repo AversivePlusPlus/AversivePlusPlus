@@ -9,6 +9,11 @@ set(subdirs
   base
   memory_mapping
   container
+
+  cmsis-core
+  cmsis-stm32f4xx
+  stm32cube-hal-stm32f4xx
+  
   hal
   hdl-atmegaxx0_1
   hal-stm32cubef4

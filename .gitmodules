@@ -28,3 +28,12 @@
 [submodule "stream-hal"]
 	path = stream-hal
 	url = https://github.com/AversivePlusPlus/stream-hal.git
+[submodule "cmsis-core"]
+	path = cmsis-core
+	url = https://github.com/AversivePlusPlus/cmsis-core.git
+[submodule "cmsis-stm32f4xx"]
+	path = cmsis-stm32f4xx
+	url = https://github.com/AversivePlusPlus/cmsis-stm32f4xx.git
+[submodule "stm32cube-hal-stm32f4xx"]
+	path = stm32cube-hal-stm32f4xx
+	url = https://github.com/AversivePlusPlus/stm32cube-hal-stm32f4xx.git
