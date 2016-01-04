@@ -1,39 +1,39 @@
 [submodule "base"]
-	path = base
+	path = modules/base
 	url = http://github.com/AversivePlusPlus/base.git
 [submodule "memory_mapping"]
-	path = memory_mapping
+	path = modules/memory_mapping
 	url = https://github.com/AversivePlusPlus/memory_mapping.git
 [submodule "cmake/toolchain/avr"]
 	path = cmake/toolchain/avr
 	url = https://github.com/AversivePlusPlus/toochain-avr.git
 [submodule "hal"]
-	path = hal
+	path = modules/hal
 	url = https://github.com/AversivePlusPlus/hal.git
 [submodule "cmake/toolchain/stm32"]
 	path = cmake/toolchain/stm32
 	url = https://github.com/AversivePlusPlus/toolchain-stm32.git
 [submodule "hal-stm32cubef4"]
-	path = hal-stm32cubef4
+	path = modules/hal-stm32cubef4
 	url = https://github.com/AversivePlusPlus/hal-stm32cubef4.git
 [submodule "hdl-atmegaxx0_1"]
-	path = hdl-atmegaxx0_1
+	path = modules/hdl-atmegaxx0_1
 	url = https://github.com/AversivePlusPlus/hdl-atmegaxx0_1.git
 [submodule "container"]
-	path = container
+	path = modules/container
 	url = https://github.com/AversivePlusPlus/container.git
 [submodule "stream"]
-	path = stream
+	path = modules/stream
 	url = https://github.com/AversivePlusPlus/stream.git
 [submodule "stream-hal"]
-	path = stream-hal
+	path = modules/stream-hal
 	url = https://github.com/AversivePlusPlus/stream-hal.git
 [submodule "cmsis-core"]
-	path = cmsis-core
+	path = modules/cmsis-core
 	url = https://github.com/AversivePlusPlus/cmsis-core.git
 [submodule "cmsis-stm32f4xx"]
-	path = cmsis-stm32f4xx
+	path = modules/cmsis-stm32f4xx
 	url = https://github.com/AversivePlusPlus/cmsis-stm32f4xx.git
 [submodule "stm32cube-hal-stm32f4xx"]
-	path = stm32cube-hal-stm32f4xx
+	path = modules/stm32cube-hal-stm32f4xx
 	url = https://github.com/AversivePlusPlus/stm32cube-hal-stm32f4xx.git

@@ -22,7 +22,7 @@ set(subdirs
   )
 
 foreach(d ${subdirs})
-  add_subdirectory(${d})
+  add_subdirectory(modules/${d})
 endforeach()
 
 set(submodules ${subdirs})
