@@ -36,7 +36,9 @@ list(REMOVE_DUPLICATES submodules)
 
 set(objs)
 foreach(m ${submodules})
-  set(objs ${objs} $<TARGET_OBJECTS:${m}_obj>)
+  if(TARGET ${m}_obj)
+    set(objs ${objs} $<TARGET_OBJECTS:${m}_obj>)
+  endif()
 endforeach()
 
 set(startup_objs)
