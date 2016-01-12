@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.6)
 
 project(Aversive++ CXX C ASM)
 
+#set(INSTALL_INTERFACE 1)
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++11")
 set(CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}/AversivePlusPlus")
 
