@@ -38,3 +38,14 @@ all: stm32f429ni
 stm32f429ni:
 all: stm32f417ig
 stm32f417ig:
+
+all: atmega640
+atmega640:
+all: atmega1280
+atmega1280:
+all: atmega1281
+atmega1281:
+all: atmega2560
+atmega2560:
+all: atmega2561
+atmega2561:
