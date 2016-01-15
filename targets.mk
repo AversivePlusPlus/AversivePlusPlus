@@ -49,3 +49,8 @@ all: atmega2560
 atmega2560:
 all: atmega2561
 atmega2561:
+
+all: atmega32
+atmega32:
+all: atmega128
+atmega128:
