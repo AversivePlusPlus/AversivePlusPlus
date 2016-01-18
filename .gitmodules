@@ -37,3 +37,6 @@
 [submodule "stm32cube-hal-stm32f4xx"]
 	path = modules/stm32cube-hal-stm32f4xx
 	url = https://github.com/AversivePlusPlus/stm32cube-hal-stm32f4xx.git
+[submodule "modules/hal-atxmega"]
+	path = modules/hal-atxmega
+	url = https://github.com/AversivePlusPlus/hal-atxmega.git
