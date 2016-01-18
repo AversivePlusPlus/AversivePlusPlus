@@ -21,6 +21,7 @@ set(subdirs
   hal
   hdl-atmegaxx0_1
   hal-stm32cubef4
+  hal-atxmega
   stream
   stream-hal
   )

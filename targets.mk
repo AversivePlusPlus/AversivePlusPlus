@@ -54,3 +54,6 @@ all: atmega32
 atmega32:
 all: atmega128
 atmega128:
+
+all: atxmega192a3
+atxmega192a3:
