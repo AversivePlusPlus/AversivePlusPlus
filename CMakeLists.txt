@@ -18,10 +18,14 @@ set(subdirs
   cmsis-stm32f4xx
   stm32cube-hal-stm32f4xx
   
-  hal
   hdl-atmegaxx0_1
+
+  hal
   hal-stm32cubef4
   hal-atxmega
+
+  device
+
   stream
   stream-hal
   )
