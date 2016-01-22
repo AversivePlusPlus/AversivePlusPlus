@@ -23,8 +23,10 @@ set(subdirs
   hal
   hal-stm32cubef4
   hal-atxmega
+  hal-switch
 
   device
+  device-hal
 
   stream
   stream-hal

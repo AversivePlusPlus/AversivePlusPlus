@@ -43,3 +43,9 @@
 [submodule "modules/device"]
 	path = modules/device
 	url = https://github.com/AversivePlusPlus/device.git
+[submodule "modules/device-hal"]
+	path = modules/device-hal
+	url = https://github.com/AversivePlusPlus/device-hal.git
+[submodule "modules/hal-switch"]
+	path = modules/hal-switch
+	url = https://github.com/AversivePlusPlus/hal-switch.git
