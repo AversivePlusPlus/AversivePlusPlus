@@ -1,7 +1,11 @@
 .PHONY: all
 
 include targets.mk
+
 all: interface
+interface:
+install: install_interface
+install_interface:
 
 interface:
 	@mkdir build/$@ -p
@@ -22,3 +26,6 @@ atxmega%:
 	@mkdir build/$@ -p
 	@cd build/$@ && cmake ../.. -DCMAKE_TOOLCHAIN_FILE=cmake/toolchain/avr/$@.cmake
 	@cd build/$@ && make -s
+
+install_%:
+	@cd build/$(subst install_,,$@) && make install
