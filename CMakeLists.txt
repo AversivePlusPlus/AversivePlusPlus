@@ -4,6 +4,7 @@ project(Aversive++ CXX C ASM)
 
 if("${AVERSIVE_MCU}" STREQUAL "")
   set(INSTALL_INTERFACE 1)
+  set(INSTALL_TOOLCHAINS 1)
 endif()
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++11")
@@ -77,10 +78,12 @@ install(TARGETS
   ARCHIVE DESTINATION lib/${AVERSIVE_MCU}
   )
 
+if(INSTALL_TOOLCHAINS)
 install(DIRECTORY
   cmake/toolchain
   DESTINATION .
   )
+endif()
 
 set(CPACK_GENERATOR "DEB")
 set(CPACK_PACKAGE_VERSION_MAJOR "15")

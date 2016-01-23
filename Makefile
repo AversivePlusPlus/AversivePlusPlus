@@ -28,4 +28,5 @@ atxmega%:
 	@cd build/$@ && make -s
 
 install_%:
-	@cd build/$(subst install_,,$@) && make install
+	@if [ -d "build/$(subst install_,,$@)" ]; then cd build/$(subst install_,,$@) && make -s install; fi
+	@if [ ! -d "build/$(subst install_,,$@)" ]; then echo "ERROR ($@) : Target not built"; fi
