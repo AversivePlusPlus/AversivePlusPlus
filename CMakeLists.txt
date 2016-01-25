@@ -80,7 +80,7 @@ install(TARGETS
 
 if(INSTALL_TOOLCHAINS)
 install(DIRECTORY
-  cmake/toolchain
+  toolchain
   DESTINATION .
   )
 endif()

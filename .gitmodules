@@ -5,13 +5,13 @@
 	path = modules/memory_mapping
 	url = https://github.com/AversivePlusPlus/memory_mapping.git
 [submodule "cmake/toolchain/avr"]
-	path = cmake/toolchain/avr
+	path = toolchain/avr
 	url = https://github.com/AversivePlusPlus/toochain-avr.git
 [submodule "hal"]
 	path = modules/hal
 	url = https://github.com/AversivePlusPlus/hal.git
 [submodule "cmake/toolchain/stm32"]
-	path = cmake/toolchain/stm32
+	path = toolchain/stm32
 	url = https://github.com/AversivePlusPlus/toolchain-stm32.git
 [submodule "hal-stm32cubef4"]
 	path = modules/hal-stm32cubef4
