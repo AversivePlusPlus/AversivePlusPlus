@@ -30,3 +30,6 @@ atxmega%:
 install_%:
 	@if [ -d "build/$(subst install_,,$@)" ]; then cd build/$(subst install_,,$@) && make -s install; fi
 	@if [ ! -d "build/$(subst install_,,$@)" ]; then echo "ERROR ($@) : Target not built"; fi
+
+update:
+	./script/update.sh
