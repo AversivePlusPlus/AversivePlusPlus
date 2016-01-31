@@ -49,3 +49,9 @@
 [submodule "modules/hal-switch"]
 	path = modules/hal-switch
 	url = https://github.com/AversivePlusPlus/hal-switch.git
+[submodule "toolchain/simul"]
+	path = toolchain/simul
+	url = https://github.com/AversivePlusPlus/toolchain-simul.git
+[submodule "modules/sasiae"]
+	path = modules/sasiae
+	url = https://github.com/AversivePlusPlus/sasiae.git

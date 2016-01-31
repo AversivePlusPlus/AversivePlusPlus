@@ -7,6 +7,8 @@ if("${AVERSIVE_MCU}" STREQUAL "")
   set(INSTALL_TOOLCHAINS 1)
 endif()
 
+message("${CMAKE_CXX_FLAGS}")
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --std=c++11")
 set(CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}/AversivePlusPlus")
 
@@ -31,7 +33,15 @@ set(subdirs
 
   stream
   stream-hal
+
+  sasiae
   )
+
+foreach(dep ${AVERSIVE_DEPENDENCIES})
+message("${dep}")
+  find_package(${dep})
+  include_directories(${${dep}_INCLUDE_DIRS})
+endforeach()
 
 foreach(d ${subdirs})
   add_subdirectory(modules/${d})
