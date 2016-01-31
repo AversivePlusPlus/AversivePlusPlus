@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.6)
 
 project(Aversive++ CXX C ASM)
 
-if("${AVERSIVE_MCU}" STREQUAL "")
+if(NOT CMAKE_TOOLCHAIN_FILE)
   set(INSTALL_INTERFACE 1)
   set(INSTALL_TOOLCHAINS 1)
 endif()
