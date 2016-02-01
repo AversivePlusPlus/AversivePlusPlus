@@ -1,6 +1,3 @@
-![build?](https://travis-ci.org/AversivePlusPlus/AversivePlusPlus.svg?branch=master)
-
-
 # Aversive++
 
 This project provides a C++ library that eases microcontroller programming.
