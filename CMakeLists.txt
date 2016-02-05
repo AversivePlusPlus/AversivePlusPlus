@@ -33,6 +33,8 @@ set(subdirs
   stream-hal
 
   sasiae
+
+  filter
   )
 
 foreach(d ${subdirs})

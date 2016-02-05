@@ -55,3 +55,6 @@
 [submodule "modules/sasiae"]
 	path = modules/sasiae
 	url = https://github.com/AversivePlusPlus/sasiae.git
+[submodule "modules/filter"]
+	path = modules/filter
+	url = https://github.com/AversivePlusPlus/filter
