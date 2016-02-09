@@ -43,3 +43,7 @@ install_%:
 
 update:
 	./script/update.sh
+
+doc:
+	@mkdir build -p
+	doxygen
