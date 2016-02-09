@@ -58,3 +58,6 @@
 [submodule "modules/filter"]
 	path = modules/filter
 	url = https://github.com/AversivePlusPlus/filter
+[submodule "modules/device-control"]
+	path = modules/device-control
+	url = https://github.com/AversivePlusPlus/device-control.git

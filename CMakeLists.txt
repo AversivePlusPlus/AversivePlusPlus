@@ -30,15 +30,16 @@ set(subdirs
   hal-atxmega
   hal-switch
 
+  filter
+
   device
   device-hal
+  device-control
 
   stream
   stream-hal
 
   sasiae
-
-  filter
   )
 
 foreach(d ${subdirs})
