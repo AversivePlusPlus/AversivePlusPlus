@@ -35,6 +35,7 @@ set(subdirs
   device
   device-hal
   device-control
+  device-2wheel
 
   stream
   stream-hal

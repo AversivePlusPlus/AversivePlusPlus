@@ -61,3 +61,6 @@
 [submodule "modules/device-control"]
 	path = modules/device-control
 	url = https://github.com/AversivePlusPlus/device-control.git
+[submodule "modules/device-2wheel"]
+	path = modules/device-2wheel
+	url = https://github.com/AversivePlusPlus/device-2wheel
