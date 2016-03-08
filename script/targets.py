@@ -19,6 +19,7 @@ TARGETS = [
     "stm32f401ce",
     "stm32f429ni",
     "stm32f417ig",
+    
     "atmega640",
     "atmega1280",
     "atmega1281",
@@ -27,6 +28,9 @@ TARGETS = [
     "atmega32",
     "atmega128",
     "atxmega192a3",
+
+    "interface",
+    "sasiae"
     ]
 
 for t in TARGETS:
@@ -34,4 +38,6 @@ for t in TARGETS:
     print(t+":")
     print("install:install_"+t)
     print("install_"+t+":")
+    print("package:package_"+t)
+    print("package_"+t+":")
     print("")
