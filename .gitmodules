@@ -64,3 +64,6 @@
 [submodule "modules/device-2wheel"]
 	path = modules/device-2wheel
 	url = https://github.com/AversivePlusPlus/device-2wheel
+[submodule "modules/hal-atmegaxx0_1"]
+	path = modules/hal-atmegaxx0_1
+	url = https://github.com/AversivePlusPlus/hal-atmegaxx0_1.git

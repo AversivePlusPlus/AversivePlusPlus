@@ -28,6 +28,7 @@ set(subdirs
   hal
   hal-stm32cubef4
   hal-atxmega
+  hal-atmegaxx0_1
   hal-switch
 
   filter
