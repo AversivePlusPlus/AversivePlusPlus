@@ -201,6 +201,13 @@ install_interface:
 package:package_interface
 package_interface:
 
+all:native
+native:
+install:install_native
+install_native:
+package:package_native
+package_native:
+
 all:sasiae
 sasiae:
 install:install_sasiae

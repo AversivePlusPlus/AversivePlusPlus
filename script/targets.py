@@ -30,6 +30,7 @@ TARGETS = [
     "atxmega192a3",
 
     "interface",
+    "native",
     "sasiae"
     ]
 

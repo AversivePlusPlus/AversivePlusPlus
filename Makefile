@@ -25,6 +25,10 @@ sasiae: build/sasiae
 	@cd build/$@ && cmake ../.. -DCMAKE_TOOLCHAIN_FILE=toolchain/simul/$@.cmake
 	@cd build/$@ && make -s
 
+native: build/native
+	@cd build/$@ && cmake ../.. -DCMAKE_TOOLCHAIN_FILE=toolchain/simul/$@.cmake
+	@cd build/$@ && make -s
+
 install_%: %
 	@cd build/$(subst install_,,$@) && make -s install
 
