@@ -69,4 +69,4 @@
 	url = https://github.com/AversivePlusPlus/hal-atmegaxx0_1.git
 [submodule "modules/cas"]
 	path = modules/cas
-	url = https://github.com/AversivePlusPlus/template-module.git
+	url = https://github.com/AversivePlusPlus/cas.git
