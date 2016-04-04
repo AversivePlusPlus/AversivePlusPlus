@@ -22,7 +22,7 @@ set(subdirs
   cmsis-core
   cmsis-stm32f4xx
   stm32cube-hal-stm32f4xx
-  
+
   hdl-atmegaxx0_1
 
   hal
@@ -40,6 +40,8 @@ set(subdirs
 
   stream
   stream-hal
+
+  feetech
 
   sasiae
   )
@@ -111,5 +113,5 @@ if(NOT AVERSIVE_TOOLCHAIN_TARGET)
 else()
   set(CPACK_PACKAGE_NAME "aversive++-${AVERSIVE_TOOLCHAIN_TARGET}")
 endif()
-  
+
 INCLUDE(CPack)
