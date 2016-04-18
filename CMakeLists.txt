@@ -19,6 +19,9 @@ set(subdirs
   memory_mapping
   container
 
+  cas
+  ik
+
   cmsis-core
   cmsis-stm32f4xx
   stm32cube-hal-stm32f4xx
