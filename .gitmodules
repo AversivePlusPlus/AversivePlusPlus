@@ -67,15 +67,12 @@
 [submodule "modules/hal-atmegaxx0_1"]
 	path = modules/hal-atmegaxx0_1
 	url = https://github.com/AversivePlusPlus/hal-atmegaxx0_1.git
-<<<<<<< HEAD
 [submodule "modules/feetech"]
 	path = modules/feetech
 	url = https://github.com/AversivePlusPlus/feetech.git
-=======
 [submodule "modules/cas"]
 	path = modules/cas
 	url = https://github.com/AversivePlusPlus/cas.git
 [submodule "modules/ik"]
 	path = modules/ik
 	url = https://github.com/AversivePlusPlus/ik.git
->>>>>>> dev-ik
