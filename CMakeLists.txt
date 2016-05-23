@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8)
 
 project(Aversive++ CXX C ASM)
 
@@ -19,10 +19,13 @@ set(subdirs
   memory_mapping
   container
 
+  cas
+  ik
+
   cmsis-core
   cmsis-stm32f4xx
   stm32cube-hal-stm32f4xx
-  
+
   hdl-atmegaxx0_1
 
   hal
@@ -40,6 +43,8 @@ set(subdirs
 
   stream
   stream-hal
+
+  feetech
 
   sasiae
   )
@@ -111,5 +116,5 @@ if(NOT AVERSIVE_TOOLCHAIN_TARGET)
 else()
   set(CPACK_PACKAGE_NAME "aversive++-${AVERSIVE_TOOLCHAIN_TARGET}")
 endif()
-  
+
 INCLUDE(CPack)
