@@ -76,3 +76,9 @@
 [submodule "modules/ik"]
 	path = modules/ik
 	url = https://github.com/AversivePlusPlus/ik.git
+[submodule "toolchain/switch"]
+	path = toolchain/switch
+	url = https://github.com/AversivePlusPlus/toolchain-switch.git
+[submodule "toolchain/generic"]
+	path = toolchain/generic
+	url = https://github.com/AversivePlusPlus/toolchain-generic.git
