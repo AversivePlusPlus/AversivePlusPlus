@@ -85,3 +85,6 @@
 [submodule "tools/conan"]
 	path = tools/conan
 	url = https://github.com/astralien3000/conan.git
+[submodule "modules/arduino"]
+	path = modules/arduino
+	url = https://github.com/astralien3000/arduino.git
