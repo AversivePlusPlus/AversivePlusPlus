@@ -82,3 +82,6 @@
 [submodule "toolchain/generic"]
 	path = toolchain/generic
 	url = https://github.com/AversivePlusPlus/toolchain-generic.git
+[submodule "tools/conan"]
+	path = tools/conan
+	url = https://github.com/astralien3000/conan.git
