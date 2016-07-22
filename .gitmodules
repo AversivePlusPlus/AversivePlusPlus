@@ -76,3 +76,6 @@
 [submodule "modules/ik"]
 	path = modules/ik
 	url = https://github.com/AversivePlusPlus/ik.git
+[submodule "modules/stream-riot"]
+	path = modules/stream-riot
+	url = https://github.com/astralien3000/stream-riot.git
