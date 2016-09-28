@@ -1,60 +1,15 @@
 [submodule "base"]
 	path = modules/base
 	url = http://github.com/AversivePlusPlus/base.git
-[submodule "memory_mapping"]
-	path = modules/memory_mapping
-	url = https://github.com/AversivePlusPlus/memory_mapping.git
-[submodule "cmake/toolchain/avr"]
-	path = toolchain/avr
-	url = https://github.com/AversivePlusPlus/toochain-avr.git
-[submodule "hal"]
-	path = modules/hal
-	url = https://github.com/AversivePlusPlus/hal.git
-[submodule "cmake/toolchain/stm32"]
-	path = toolchain/stm32
-	url = https://github.com/AversivePlusPlus/toolchain-stm32.git
-[submodule "hal-stm32cubef4"]
-	path = modules/hal-stm32cubef4
-	url = https://github.com/AversivePlusPlus/hal-stm32cubef4.git
-[submodule "hdl-atmegaxx0_1"]
-	path = modules/hdl-atmegaxx0_1
-	url = https://github.com/AversivePlusPlus/hdl-atmegaxx0_1.git
 [submodule "container"]
 	path = modules/container
 	url = https://github.com/AversivePlusPlus/container.git
 [submodule "stream"]
 	path = modules/stream
 	url = https://github.com/AversivePlusPlus/stream.git
-[submodule "stream-hal"]
-	path = modules/stream-hal
-	url = https://github.com/AversivePlusPlus/stream-hal.git
-[submodule "cmsis-core"]
-	path = modules/cmsis-core
-	url = https://github.com/AversivePlusPlus/cmsis-core.git
-[submodule "cmsis-stm32f4xx"]
-	path = modules/cmsis-stm32f4xx
-	url = https://github.com/AversivePlusPlus/cmsis-stm32f4xx.git
-[submodule "stm32cube-hal-stm32f4xx"]
-	path = modules/stm32cube-hal-stm32f4xx
-	url = https://github.com/AversivePlusPlus/stm32cube-hal-stm32f4xx.git
-[submodule "modules/hal-atxmega"]
-	path = modules/hal-atxmega
-	url = https://github.com/AversivePlusPlus/hal-atxmega.git
 [submodule "modules/device"]
 	path = modules/device
 	url = https://github.com/AversivePlusPlus/device.git
-[submodule "modules/device-hal"]
-	path = modules/device-hal
-	url = https://github.com/AversivePlusPlus/device-hal.git
-[submodule "modules/hal-switch"]
-	path = modules/hal-switch
-	url = https://github.com/AversivePlusPlus/hal-switch.git
-[submodule "toolchain/simul"]
-	path = toolchain/simul
-	url = https://github.com/AversivePlusPlus/toolchain-simul.git
-[submodule "modules/sasiae"]
-	path = modules/sasiae
-	url = https://github.com/AversivePlusPlus/sasiae.git
 [submodule "modules/filter"]
 	path = modules/filter
 	url = https://github.com/AversivePlusPlus/filter
@@ -64,9 +19,6 @@
 [submodule "modules/device-2wheel"]
 	path = modules/device-2wheel
 	url = https://github.com/AversivePlusPlus/device-2wheel
-[submodule "modules/hal-atmegaxx0_1"]
-	path = modules/hal-atmegaxx0_1
-	url = https://github.com/AversivePlusPlus/hal-atmegaxx0_1.git
 [submodule "modules/feetech"]
 	path = modules/feetech
 	url = https://github.com/AversivePlusPlus/feetech.git
