@@ -1,12 +1,15 @@
 .PHONY: all update doc
 
+export PATH:=$(PWD)/tools/bin:$(PATH)
+
 modules_export:
-	@for d in modules/* ; do (cd $$d ; $(PWD)/tools/bin/conan export AversivePlusPlus/dev) ; done
-	@for d in toolchain/* ; do (cd $$d ; $(PWD)/tools/bin/conan export AversivePlusPlus/dev) ; done
-	$(PWD)/tools/bin/conan export AversivePlusPlus/dev
+	@echo "Exporting modules..."
+	@for d in modules/* ; do (cd $$d ; conan export AversivePlusPlus/dev) ; done
+	@for d in toolchains/* ; do (cd $$d ; conan export AversivePlusPlus/dev) ; done
+	conan export AversivePlusPlus/dev
 
 update:
-	./script/update.sh
+	git submodule update --init
 
 doc:
 	@mkdir build -p
