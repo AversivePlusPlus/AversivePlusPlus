@@ -5,13 +5,13 @@
 	path = modules/memory_mapping
 	url = https://github.com/AversivePlusPlus/memory_mapping.git
 [submodule "cmake/toolchain/avr"]
-	path = toolchain/avr
+	path = toolchains/avr
 	url = https://github.com/AversivePlusPlus/toochain-avr.git
 [submodule "hal"]
 	path = modules/hal
 	url = https://github.com/AversivePlusPlus/hal.git
 [submodule "cmake/toolchain/stm32"]
-	path = toolchain/stm32
+	path = toolchains/stm32
 	url = https://github.com/AversivePlusPlus/toolchain-stm32.git
 [submodule "hal-stm32cubef4"]
 	path = modules/hal-stm32cubef4
@@ -50,7 +50,7 @@
 	path = modules/hal-switch
 	url = https://github.com/AversivePlusPlus/hal-switch.git
 [submodule "toolchain/simul"]
-	path = toolchain/simul
+	path = toolchains/simul
 	url = https://github.com/AversivePlusPlus/toolchain-simul.git
 [submodule "modules/sasiae"]
 	path = modules/sasiae
@@ -77,10 +77,10 @@
 	path = modules/ik
 	url = https://github.com/AversivePlusPlus/ik.git
 [submodule "toolchain/switch"]
-	path = toolchain/switch
+	path = toolchains/switch
 	url = https://github.com/AversivePlusPlus/toolchain-switch.git
 [submodule "toolchain/generic"]
-	path = toolchain/generic
+	path = toolchains/generic
 	url = https://github.com/AversivePlusPlus/toolchain-generic.git
 [submodule "tools/conan"]
 	path = tools/conan
