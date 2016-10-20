@@ -88,3 +88,6 @@
 [submodule "modules/arduino"]
 	path = modules/thirdparty/arduino
 	url = https://github.com/astralien3000/arduino.git
+[submodule "examples/template-project"]
+	path = examples/template-project
+	url = https://github.com/AversivePlusPlus/template-project.git
