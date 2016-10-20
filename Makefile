@@ -4,7 +4,9 @@ export PATH:=$(PWD)/tools/bin:$(PATH)
 
 modules_export:
 	@echo "Exporting modules..."
-	@for d in modules/* ; do (cd $$d ; conan export AversivePlusPlus/dev) ; done
+	@for d in modules/{base,cas,container,device,device-2wheel,device-control,feetech,filter,ik,sasiae,stream} ; do (cd $$d ; conan export AversivePlusPlus/dev) ; done
+	@for d in modules/hal/* ; do (cd $$d ; conan export AversivePlusPlus/dev) ; done
+	@for d in modules/thirdparty/* ; do (cd $$d ; conan export AversivePlusPlus/dev) ; done
 	@for d in toolchains/* ; do (cd $$d ; conan export AversivePlusPlus/dev) ; done
 	conan export AversivePlusPlus/dev
 
