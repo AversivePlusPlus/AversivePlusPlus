@@ -13,6 +13,18 @@ addons:
     - cmake
     - cmake-data
 before_install:
+# avr-gcc
+ - wget http://fr.archive.ubuntu.com/ubuntu/pool/universe/g/gcc-avr/gcc-avr_4.8-2.1_amd64.deb
+ - wget http://fr.archive.ubuntu.com/ubuntu/pool/universe/b/binutils-avr/binutils-avr_2.23.1-2.1_amd64.deb
+ - wget http://fr.archive.ubuntu.com/ubuntu/pool/universe/a/avr-libc/avr-libc_1.8.0-4.1_all.deb
+ - wget http://fr.archive.ubuntu.com/ubuntu/pool/main/m/mpclib3/libmpc3_1.0.1-1ubuntu1_amd64.deb
+ - wget http://fr.archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/libmpfr4_3.1.2-1_amd64.deb
+ - sudo dpkg -i binutils-avr*.deb
+ - sudo dpkg -i libmpfr4*.deb
+ - sudo dpkg -i libmpc3*.deb
+ - sudo dpkg -i gcc-avr*.deb
+ - sudo dpkg -i avr-libc*.deb
+ - avr-g++ --version
 # Qt5
  - sudo add-apt-repository --yes ppa:beineri/opt-qt551
  - sudo apt-get update -qq
