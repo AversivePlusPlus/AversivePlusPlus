@@ -56,6 +56,11 @@ test: test_template-project
 test_template-project:
 	@cd examples/template-project && $(MAKE) -s
 
+test: test_project-2wheel-asserv
+
+test_project-2wheel-asserv:
+	@cd examples/project-2wheel-asserv && $(MAKE) -s
+
 $(foreach m,$(MODULES),$(eval $(call MAKE_RULE,$(m),modules,test)))
 
 ################################
