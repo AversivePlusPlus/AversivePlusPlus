@@ -2,6 +2,8 @@
 
 This project provides a C++ library that eases microcontroller programming.
 
+## Description
+
 Its aim is to provide an interface simple enough to be able to create complex applications,
 and optimized enough to enable small microcontrollers to execute these applications.
 
@@ -11,20 +13,37 @@ Indeed, it is designed to provide the same API for a simulator
 
 Check the project's [official website](http://aversiveplusplus.com) to have more information.
 
-# Install
+## Installation
 
-There is currently a Windows installer, and a Debian package (for any apt-based distribution).
-You can check the [wiki](https://github.com/AversivePlusPlus/AversivePlusPlus/wiki)'s installation tutorials to have more information.
+### Aversive++
 
-# Build
+The library is a collection of modules that can be installed as conan packages.
+(Warning : the conan used is modified, to enable embedded targets,
+it may cause some trouble with existing conan installation).
 
-To build the library from sources, just use this command :
-
+```bash
+git clone https://github.com/AversivePlusPlus/AversivePlusPlus.git
+cd AversivePlusPlus
+make update
+make export
 ```
+
+### Simulator
+
+The project comes with a simple simulator called tinySASIAE, you can build and install it :
+
+```bash
+cd tinySASIAE
 make
+sudo make install
 ```
 
-# Documentation
+## Quick Start
 
-There is some tutorials in the [wiki](https://github.com/AversivePlusPlus/AversivePlusPlus/wiki).
-The current API documentation is not available.
+There is an example code, to be used with the simulator.
+
+```bash
+cd examples/project-2wheel-asserv
+make
+tinySASIAE -r build/bin/project-2wheel-asserv
+```
