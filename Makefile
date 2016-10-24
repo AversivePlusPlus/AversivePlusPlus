@@ -30,6 +30,7 @@ export_$(1):
 	@cd $(2)/$(1) && $(CONAN) export AversivePlusPlus/dev
 endef
 
+$(eval $(call CONAN_EXPORT_RULE,feetech,modules))
 $(foreach m,$(MODULES),$(eval $(call MAKE_RULE,$(m),modules,export)))
 $(foreach m,$(THIRDPARTY),$(eval $(call CONAN_EXPORT_RULE,$(m),modules/thirdparty)))
 $(foreach m,$(TOOLCHAINS),$(eval $(call CONAN_EXPORT_RULE,$(m),toolchains)))
