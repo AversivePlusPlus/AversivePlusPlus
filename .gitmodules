@@ -58,3 +58,9 @@
 [submodule "examples/template-project"]
 	path = examples/template-project
 	url = https://github.com/AversivePlusPlus/template-project.git
+[submodule "tools/tinySASIAE"]
+	path = tools/tinySASIAE
+	url = https://github.com/astralien3000/tinySASIAE.git
+[submodule "examples/project-2wheel-asserv"]
+	path = examples/project-2wheel-asserv
+	url = https://github.com/AversivePlusPlus/project-2wheel-asserv.git
