@@ -64,3 +64,6 @@
 [submodule "examples/project-2wheel-asserv"]
 	path = examples/project-2wheel-asserv
 	url = https://github.com/AversivePlusPlus/project-2wheel-asserv.git
+[submodule "tools/ik"]
+	path = tools/ik
+	url = https://github.com/AversivePlusPlus/ik.git
