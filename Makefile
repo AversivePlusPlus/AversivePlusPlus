@@ -21,7 +21,7 @@ endef
 
 ################################
 export:
-	@conan export AversivePlusPlus/dev
+	@$(CONAN) export AversivePlusPlus/dev
 
 define CONAN_EXPORT_RULE
 export: export_$(1)
