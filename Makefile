@@ -4,7 +4,7 @@ export PATH:=$(PWD)/tools/bin:$(PATH)
 export CONAN ?= $(PWD)/tools/bin/conan
 
 MODULES = base container device device-2wheel device-control filter sasiae stream #feetech 
-THIRDPARTY = arduino cmsis-core cmsis-stm32f4xx stm32cube-hal-stm32f4xx
+THIRDPARTY = arduino cmsis-core cmsis-stm32f4xx stm32cube-hal-stm32f4xx qt5
 TOOLCHAINS = avr generic simul stm32 switch
 
 ################################

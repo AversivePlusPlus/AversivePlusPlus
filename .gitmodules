@@ -67,3 +67,6 @@
 [submodule "tools/ik"]
 	path = tools/ik
 	url = https://github.com/AversivePlusPlus/ik.git
+[submodule "modules/thirdparty/qt5"]
+	path = modules/thirdparty/qt5
+	url = https://github.com/aversiveplusplus-thirdparty/qt5.git
