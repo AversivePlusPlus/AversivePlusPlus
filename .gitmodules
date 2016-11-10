@@ -70,3 +70,27 @@
 [submodule "modules/thirdparty/qt5"]
 	path = modules/thirdparty/qt5
 	url = https://github.com/aversiveplusplus-thirdparty/qt5.git
+[submodule "modules/hal/hal"]
+	path = modules/hal/hal
+	url = https://github.com/aversiveplusplus-hal/hal.git
+[submodule "modules/hal/memory_mapping"]
+	path = modules/hal/memory_mapping
+	url = https://github.com/aversiveplusplus-hal/memory_mapping.git
+[submodule "modules/hal/hdl-atmegaxx0_1"]
+	path = modules/hal/hdl-atmegaxx0_1
+	url = https://github.com/aversiveplusplus-hal/hdl-atmegaxx0_1.git
+[submodule "modules/hal/hal-atmegaxx0_1"]
+	path = modules/hal/hal-atmegaxx0_1
+	url = https://github.com/aversiveplusplus-hal/hal-atmegaxx0_1.git
+[submodule "modules/hal/hal-stm32cubef4"]
+	path = modules/hal/hal-stm32cubef4
+	url = https://github.com/aversiveplusplus-hal/hal-stm32cubef4.git
+[submodule "modules/hal/hal-switch"]
+	path = modules/hal/hal-switch
+	url = https://github.com/aversiveplusplus-hal/hal-switch.git
+[submodule "modules/hal/stream-hal"]
+	path = modules/hal/stream-hal
+	url = https://github.com/aversiveplusplus-hal/stream-hal.git
+[submodule "modules/hal/device-hal"]
+	path = modules/hal/device-hal
+	url = https://github.com/aversiveplusplus-hal/device-hal.git
