@@ -3,7 +3,7 @@
 export PATH:=$(PWD)/tools/bin:$(PATH)
 export CONAN ?= $(PWD)/tools/bin/conan
 
-MODULES = base container device device-2wheel device-control filter sasiae stream #feetech 
+MODULES = base container device device-2wheel device-control filter sasiae stream feetech 
 THIRDPARTY = arduino cmsis-core cmsis-stm32f4xx stm32cube-hal-stm32f4xx qt5
 TOOLCHAINS = avr generic simul stm32 switch
 HAL = device-hal hal hal-atmegaxx0_1 hal-stm32cubef4 hal-switch hdl-atmegaxx0_1 memory_mapping stream-hal
@@ -31,7 +31,6 @@ export_$(1):
 	@cd $(2)/$(1) && $(CONAN) export AversivePlusPlus/dev
 endef
 
-$(eval $(call CONAN_EXPORT_RULE,feetech,modules))
 $(foreach m,$(MODULES),$(eval $(call MAKE_RULE,$(m),modules,export)))
 $(foreach m,$(THIRDPARTY),$(eval $(call CONAN_EXPORT_RULE,$(m),modules/thirdparty)))
 $(foreach m,$(HAL),$(eval $(call CONAN_EXPORT_RULE,$(m),modules/hal)))
