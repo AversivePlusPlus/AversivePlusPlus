@@ -1,0 +1,1 @@
+mcu = {'f4': {'11': {'re': True, 've': True, 'ce': True}, '10': {'rb': True}, '39': {'ni': True, 'bg': True}, '01': {'cc': True, 're': True, 'vc': True, 've': True, 'ce': True}, '07': {'ig': True, 'vg': True}, '17': {'ig': True}, '46': {'re': True, 'ze': True}, '29': {'ni': True, 'zi': True}, '69': {'ni': True}, '79': {'ni': True}}}

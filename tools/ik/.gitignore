@@ -1,0 +1,9 @@
+*.pyc
+*~
+\#*
+a.out
+*.c
+*.cpp
+*.hpp
+*.o
+blender.out.json
