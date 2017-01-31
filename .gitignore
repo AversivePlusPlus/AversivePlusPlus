@@ -1,4 +1,13 @@
+# tmp
 *~
-*.user
+
+# bin
 build
 *.pyc
+
+# qt
+*.user
+*.creator
+*.files
+*.includes
+*.config

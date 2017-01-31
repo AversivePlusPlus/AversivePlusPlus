@@ -94,3 +94,9 @@
 [submodule "modules/hal/device-hal"]
 	path = modules/hal/device-hal
 	url = https://github.com/aversiveplusplus-hal/device-hal.git
+[submodule "modules/string"]
+	path = modules/string
+	url = https://github.com/AversivePlusPlus/string.git
+[submodule "modules/fs"]
+	path = modules/fs
+	url = https://github.com/AversivePlusPlus/fs.git
