@@ -1,10 +1,10 @@
 [submodule "base"]
 	path = modules/base
 	url = http://github.com/AversivePlusPlus/base.git
-[submodule "cmake/toolchain/avr"]
+[submodule "toolchain/avr"]
 	path = toolchains/avr
 	url = https://github.com/AversivePlusPlus/toochain-avr.git
-[submodule "cmake/toolchain/stm32"]
+[submodule "toolchain/stm32"]
 	path = toolchains/stm32
 	url = https://github.com/AversivePlusPlus/toolchain-stm32.git
 [submodule "container"]
@@ -100,3 +100,6 @@
 [submodule "modules/fs"]
 	path = modules/fs
 	url = https://github.com/AversivePlusPlus/fs.git
+[submodule "cmake/toolchain"]
+	path = cmake/toolchain
+	url = https://github.com/AversivePlusPlus/cmake-toolchain.git
