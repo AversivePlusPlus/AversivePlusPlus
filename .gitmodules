@@ -103,3 +103,6 @@
 [submodule "cmake/toolchain"]
 	path = cmake/toolchain
 	url = https://github.com/AversivePlusPlus/cmake-toolchain.git
+[submodule "modules/thirdparty/teensy"]
+	path = modules/thirdparty/teensy
+	url = https://github.com/aversiveplusplus-thirdparty/teensy.git
