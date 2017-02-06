@@ -109,3 +109,6 @@
 [submodule "modules/coap"]
 	path = modules/coap
 	url = https://github.com/astralien3000/coap--.git
+[submodule "modules/thirdparty/riot"]
+	path = modules/thirdparty/riot
+	url = https://github.com/aversiveplusplus-thirdparty/riot.git
