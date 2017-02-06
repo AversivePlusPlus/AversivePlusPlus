@@ -106,3 +106,6 @@
 [submodule "modules/thirdparty/teensy"]
 	path = modules/thirdparty/teensy
 	url = https://github.com/aversiveplusplus-thirdparty/teensy.git
+[submodule "modules/coap"]
+	path = modules/coap
+	url = https://github.com/astralien3000/coap--.git
