@@ -34,6 +34,7 @@ $(foreach m,$(MODULES),$(eval $(call MAKE_RULE,$(m),modules,export)))
 $(foreach m,$(THIRDPARTY),$(eval $(call CONAN_EXPORT_RULE,$(m),modules/thirdparty)))
 $(foreach m,$(HAL),$(eval $(call CONAN_EXPORT_RULE,$(m),modules/hal)))
 $(foreach m,$(TOOLCHAINS),$(eval $(call CONAN_EXPORT_RULE,$(m),toolchains)))
+$(eval $(call CONAN_EXPORT_RULE,toolchain,cmake))
 
 ################################
 clean:
