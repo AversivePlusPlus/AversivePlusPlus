@@ -1,10 +1,9 @@
 .PHONY: all update doc
 
-export PATH:=$(PWD)/tools/bin:$(PATH)
 export CONAN ?= $(PWD)/tools/bin/conan
 
-MODULES = base container device device-2wheel device-control filter sasiae stream feetech 
-THIRDPARTY = arduino cmsis-core cmsis-stm32f4xx stm32cube-hal-stm32f4xx qt5
+MODULES = base container device device-2wheel device-control filter sasiae stream feetech fs string coap
+THIRDPARTY = arduino cmsis-core cmsis-stm32f4xx stm32cube-hal-stm32f4xx qt5 teensy riot/riot riot/stream-riot
 TOOLCHAINS = avr generic simul stm32 switch
 HAL = device-hal hal hal-atmegaxx0_1 hal-stm32cubef4 hal-switch hdl-atmegaxx0_1 memory_mapping stream-hal
 
