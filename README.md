@@ -11,7 +11,7 @@ The other aspect of this library is to be multiplatform.
 Indeed, it is designed to provide the same API for a simulator
 (named SASIAE) and for AVR-based and ARM-based microcontrollers.
 
-Check the project's [official website](http://aversiveplusplus.com) to have more information.
+Check the project's [official website](http://aversiveplusplus.github.io) to have more information.
 
 ## Installation
 
