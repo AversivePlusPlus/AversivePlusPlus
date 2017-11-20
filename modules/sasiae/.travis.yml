@@ -1,0 +1,48 @@
+language: c++
+sudo: required
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    - george-edison55-precise-backports
+    packages:
+    - gcc-5
+    - g++-5
+    - git
+    - make
+    - cmake
+    - cmake-data
+before_install:
+# Qt5
+ - sudo add-apt-repository --yes ppa:beineri/opt-qt551
+ - sudo apt-get update -qq
+ - sudo apt-get install -qq qt55base
+ - export CMAKE_PREFIX_PATH=/opt/qt55/lib/cmake
+ - sudo ln -s -T /opt/qt55/include /usr/include/qt5
+ - export LIBRARY_PATH=/opt/qt55/lib
+ - export LD_LIBRARY_PATH=/opt/qt55/lib
+# Conan
+ - git clone https://github.com/astralien3000/conan -b dev-aversiveplusplus
+ - (cd conan && sudo pip install -r conans/requirements.txt)
+ - export CONAN=$(pwd)/conan/bin/conan
+ - export CC=gcc-5
+ - export CXX=g++-5
+# Base
+ - git clone https://github.com/AversivePlusPlus/base
+ - (cd base && make export)
+# Container
+ - git clone https://github.com/AversivePlusPlus/container
+ - (cd container && make export)
+# Stream
+ - git clone https://github.com/AversivePlusPlus/stream
+ - (cd stream && make export)
+# Device
+ - git clone https://github.com/AversivePlusPlus/device
+ - (cd device && make export)
+# qt5
+ - git clone https://github.com/aversiveplusplus-thirdparty/qt5
+ - (cd qt5 && make export)
+install:
+ - make export
+script:
+ - make test

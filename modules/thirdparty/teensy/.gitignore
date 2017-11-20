@@ -1,0 +1,16 @@
+# tmp
+*~
+
+# bin
+build/
+*.pyc
+
+# qt
+*.user
+*.creator
+*.files
+*.includes
+*.config
+
+# specific
+cores/

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="5,1">
+    <item>
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="widthLabel">
+        <property name="text">
+         <string>widthLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="xLabel">
+        <property name="text">
+         <string>xLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="yLabel">
+        <property name="text">
+         <string>yLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="angleLabel">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>angleLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="leftSpeedLabel">
+        <property name="text">
+         <string>leftSpeedLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="rightSpeedLabel">
+        <property name="text">
+         <string>RightSpeedLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="leftEncLabel">
+        <property name="text">
+         <string>leftEncLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="rightEncLabel">
+        <property name="text">
+         <string>rightEncLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

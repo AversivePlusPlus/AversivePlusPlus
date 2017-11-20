@@ -1,0 +1,38 @@
+language: c++
+sudo: required
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    - george-edison55-precise-backports
+    packages:
+    - gcc-5
+    - g++-5
+    - git
+    - make
+    - cmake
+    - cmake-data
+before_install:
+# Conan
+ - git clone https://github.com/astralien3000/conan -b dev-aversiveplusplus
+ - (cd conan && sudo pip install -r conans/requirements.txt)
+ - export CONAN=$(pwd)/conan/bin/conan
+ - export CC=gcc-5
+ - export CXX=g++-5
+# Base
+ - git clone https://github.com/AversivePlusPlus/base
+ - (cd base && make export)
+# Container
+ - git clone https://github.com/AversivePlusPlus/container
+ - (cd container && make export)
+# Device
+ - git clone https://github.com/AversivePlusPlus/device
+ - (cd device && make export)
+# Stream
+ - git clone https://github.com/AversivePlusPlus/stream
+ - (cd stream && make export)
+install:
+ - make export
+script:
+ - cmake --version
+ - make test
